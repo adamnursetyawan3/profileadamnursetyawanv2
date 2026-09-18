@@ -1,0 +1,444 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #D6E4FA 0%, #4C7EBF 50%, #113669 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    padding: 40px 20px;
+}
+
+.profile-container {
+    background: rgba(255, 255, 255, 0.98);
+    width: 100%;
+    max-width: 440px;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+/* Banner Background */
+.banner {
+    width: 100%;
+    height: 180px;
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-wrapper {
+    padding: 0 30px;
+    text-align: center;
+    margin-top: -70px;
+    position: relative;
+}
+
+.profile-img-wrapper {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #113669 0%, #9173B1 33%, #E3A5CE 66%, #D6E4FA 100%);
+    margin-bottom: 12px;
+    box-shadow: 0 8px 20px rgba(17, 54, 105, 0.5);
+    background-color: white; 
+}
+
+.profile-img-wrapper img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    display: block;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #113669;
+    margin-bottom: 2px;
+}
+
+.username-tag {
+    font-size: 15px;
+    font-weight: 600;
+    color: #9173B1;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Efek Mengetik */
+.typing-text {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #9173B1;
+    animation: typing 3s steps(30, end) infinite, blink-caret .75s step-end infinite;
+    max-width: 100%; 
+}
+
+@keyframes typing {
+    0% { width: 0 }
+    40% { width: 220px; }
+    80% { width: 220px; }
+    100% { width: 0; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #9173B1; }
+}
+
+.bio-section {
+    background: rgba(214, 228, 250, 0.35);
+    border: 1px solid #A9C6EB;
+    border-radius: 16px;
+    padding: 15px 20px;
+    margin: 15px 0;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #2c3e50;
+}
+
+.bio-section p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.bio-section p:last-child {
+    margin-bottom: 0;
+}
+
+.bio-section strong {
+    color: #113669;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Umum untuk Judul Section */
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #113669;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Skills Section */
+.skills-section {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4C7EBF;
+}
+
+.skill-info i {
+    margin-right: 8px;
+    width: 20px;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #4C7EBF 0%, #113669 100%);
+    border-radius: 5px;
+}
+
+.html-progress { width: 80%; background: linear-gradient(90deg, #E34F26, #F06529); }
+.html-icon { color: #E34F26; }
+
+.css-progress { width: 50%; background: linear-gradient(90deg, #1572B6, #33A9DC); }
+.css-icon { color: #1572B6; }
+
+.sleep-progress { width: 100%; background: linear-gradient(90deg, #9173B1, #4C7EBF); }
+.sleep-icon { color: #9173B1; }
+
+/* Mitra Section yang Diperbarui */
+.partner-link {
+    text-decoration: none;
+    display: block; 
+}
+
+.partner-section {
+    background: #f8faff;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 0 0 25px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #c2d6f3;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+.partner-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    border-color: #8dafe3;
+    background: #f0f4fc;
+}
+
+.partner-logo {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menggunakan gambar SVG Gemini langsung untuk keakuratan */
+.gemini-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.partner-info {
+    text-align: left;
+}
+
+.partner-info h4 {
+    font-size: 15px;
+    color: #1a498a;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.partner-info .sub-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #5c8cd6;
+    margin-bottom: 4px;
+}
+
+.partner-info p {
+    font-size: 12px;
+    color: #666;
+    line-height: 1.3;
+    font-style: normal;
+}
+
+/* Social Buttons */
+.social-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 0; 
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+    padding: 14px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(90deg, #4C7EBF 0%, #113669 100%);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(17, 54, 105, 0.2);
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(17, 54, 105, 0.3);
+    background: linear-gradient(90deg, #5c8cd6 0%, #1a498a 100%);
+}
+
+/* Spotify Player Area */
+.spotify-player-container {
+    margin-top: 10px;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.spotify-player-container:hover {
+    transform: translateY(-2px);
+}
+
+.footer-cr {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #888;
+    font-weight: 300;
+}
+
+.footer-cr i {
+    color: #dc2743;
+}
+
+/* Custom Ogg Audio Player */
+.ogg-player-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: linear-gradient(135deg, #113669 0%, #1a498a 60%, #3567a8 100%);
+    color: #ffffff;
+    border-radius: 16px;
+    padding: 14px 18px;
+    margin-bottom: 14px;
+    box-shadow: 0 8px 22px rgba(17, 54, 105, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-align: left;
+}
+
+.ogg-player-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(17, 54, 105, 0.35);
+}
+
+.ogg-play-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffff;
+    color: #113669;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.ogg-play-btn:hover {
+    transform: scale(1.08);
+    background: #e9f1fc;
+}
+
+.ogg-info {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.ogg-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ogg-sub {
+    font-size: 11px;
+    color: #c7dcff;
+    margin-top: 2px;
+}
+
+/* Animated visualizer wave */
+.ogg-visualizer {
+    display: flex;
+    align-items: flex-end;
+    gap: 3px;
+    height: 20px;
+    padding-right: 4px;
+}
+
+.ogg-visualizer .bar {
+    width: 3px;
+    height: 4px;
+    background-color: #8bb7f8;
+    border-radius: 2px;
+    transition: height 0.2s ease;
+}
+
+.ogg-visualizer.active .bar-1 {
+    animation: soundWave 0.8s ease-in-out infinite alternate;
+}
+.ogg-visualizer.active .bar-2 {
+    animation: soundWave 0.6s ease-in-out infinite alternate 0.2s;
+}
+.ogg-visualizer.active .bar-3 {
+    animation: soundWave 0.9s ease-in-out infinite alternate 0.4s;
+}
+.ogg-visualizer.active .bar-4 {
+    animation: soundWave 0.7s ease-in-out infinite alternate 0.1s;
+}
+
+@keyframes soundWave {
+    0% { height: 4px; }
+    100% { height: 18px; background-color: #ffffff; }
+}
+
+/* Floating Audio Control Pill */
+.floating-music-pill {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background: rgba(17, 54, 105, 0.92);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.floating-music-pill:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 8px 25px rgba(17, 54, 105, 0.4);
+    background: rgba(26, 73, 138, 0.96);
+}
+
+.floating-music-pill.playing i {
+    color: #63b3ed;
+    animation: pulseIcon 1.8s infinite;
+}
+
+@keyframes pulseIcon {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.18); }
+}
+

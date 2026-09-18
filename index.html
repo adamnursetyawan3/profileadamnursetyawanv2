@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Nur Setyawan</title>
+    <meta name="description" content="Profil pribadi dan portfolio web Adam Nur Setyawan">
+    <meta property="og:title" content="Adam Nur Setyawan">
+    <meta property="og:description" content="Profil pribadi dan portfolio web Adam Nur Setyawan">
+    <!-- Font Awesome Untuk Icon Media Sosial & Skills -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- File Css Eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Banner Image -->
+        <div class="banner"></div>
+
+        <div class="content-wrapper">
+            <!-- Foto Profil -->
+            <div class="profile-img-wrapper">
+                <img src="fotoprofil.jpg" alt="Foto Profil Adam">
+            </div>
+
+            <!-- Nama, Username Tag, Dan Teks Mengetik -->
+            <h1>Adam Nur Setyawan</h1>
+            <p class="username-tag">@adamnurs_</p>
+            <div>
+                <span class="typing-text">Hanya untuk bersenang-senang!</span>
+            </div>
+
+            <!-- Informasi Bio -->
+            <div class="bio-section">
+                <p><strong>Umur</strong> 20 Tahun</p>
+                <p><strong>Pekerjaan</strong> Shift Worker | Transit Point Logos</p>
+                <p><strong>Jurusan Terakhir</strong> Otkp (Otomatisasi Tata Kelola Perkantoran)</p>
+            </div>
+            
+            <!-- Keahlian / Skills -->
+            <div class="skills-section">
+                <h3 class="section-title">Keahlian</h3>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fab fa-html5 html-icon"></i> HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress html-progress"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fab fa-css3-alt css-icon"></i> CSS</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress css-progress"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span><i class="fas fa-bed sleep-icon"></i> TIDUR</span>
+                        <span>100%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress sleep-progress"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mitra Saya -->
+            <h3 class="section-title" style="margin-top: 30px; margin-bottom: 15px;">Mitra</h3>
+            <a href="https://gemini.google.com" target="_blank" class="partner-link">
+                <div class="partner-section">
+                    <div class="partner-logo">
+                        <!-- SVG Logo Resmi Gemini -->
+                        <svg class="gemini-svg" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 0C24 13.2548 34.7452 24 48 24C34.7452 24 24 34.7452 24 48C24 34.7452 13.2548 24 0 24C13.2548 24 24 13.2548 24 0Z" fill="url(#paint0_linear)"/>
+                            <defs>
+                                <linearGradient id="paint0_linear" x1="0" y1="24" x2="48" y2="24" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#4285F4"/>
+                                    <stop offset="0.5" stop-color="#9B72CB"/>
+                                    <stop offset="1" stop-color="#D96570"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="partner-info">
+                        <h4>Google</h4>
+                        <div class="sub-title">Gemini</div>
+                        <p>Ai dari google yang dibuat untuk search & analisis</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Media Sosial Saya -->
+            <h3 class="section-title" style="margin-top: 30px; margin-bottom: 15px;">Sosial Media</h3>
+            <div class="social-buttons">
+                <a href="https://wa.me/62895351850288" target="_blank" class="social-btn">
+                    <i class="fab fa-whatsapp fa-lg"></i> Whatsapp
+                </a>
+                <a href="https://www.tiktok.com/@karinnchans_?_r=1&_t=ZS-98JYcb2oGpA" target="_blank" class="social-btn">
+                    <i class="fab fa-tiktok fa-lg"></i> Tiktok
+                </a>
+                <a href="https://www.facebook.com/share/1HagpuwkQC/" target="_blank" class="social-btn">
+                    <i class="fab fa-facebook-f fa-lg"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/adamnurs_?igsh=bGtyNWw0eXppeHhx" target="_blank" class="social-btn">
+                    <i class="fab fa-instagram fa-lg"></i> Instagram
+                </a>
+            </div>
+
+            <!-- Musik Section -->
+            <h3 class="section-title" style="margin-top: 35px; margin-bottom: 15px;">Musik</h3>
+            
+            <!-- Background Audio Element -->
+            <audio id="bg-audio" src="shapeofmyheart.ogg" preload="auto" loop autoplay></audio>
+
+            <!-- Shape of My Heart Player Card -->
+            <div class="ogg-player-card" id="ogg-player-card">
+                <button type="button" class="ogg-play-btn" id="ogg-play-btn" aria-label="Putar atau Jeda Musik">
+                    <i class="fas fa-play" id="ogg-play-icon"></i>
+                </button>
+                <div class="ogg-info">
+                    <div class="ogg-title">Shape of My Heart</div>
+                    <div class="ogg-sub" id="ogg-status-sub">Memutar otomatis...</div>
+                </div>
+                <div class="ogg-visualizer" id="ogg-visualizer">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                    <span class="bar bar-4"></span>
+                </div>
+            </div>
+
+            <!-- Spotify Playlist Player Cuman 30 Detik -->
+            <div class="spotify-player-container">
+                <iframe style="border-radius:16px; box-shadow: 0 8px 25px rgba(17, 54, 105, 0.2);" 
+                    src="https://open.spotify.com/embed/playlist/4ZdHBOgN4UAVpw7J5uZPux?utm_source=generator&theme=0" 
+                    width="100%" height="380" frameBorder="0" allowfullscreen="" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+            
+            <!-- Footer Copyright -->
+            <div class="footer-cr">
+                Dibuat dengan <i class="fas fa-heart"></i> oleh Adam Nur Setyawan 2026
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Audio Control Widget -->
+    <div class="floating-music-pill" id="floating-music-pill" role="button" tabindex="0" title="Putar atau Jeda Musik">
+        <i class="fas fa-music" id="floating-music-icon"></i>
+        <span id="floating-music-label">Shape of My Heart</span>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const audio = document.getElementById('bg-audio');
+            const playBtn = document.getElementById('ogg-play-btn');
+            const playIcon = document.getElementById('ogg-play-icon');
+            const statusSub = document.getElementById('ogg-status-sub');
+            const visualizer = document.getElementById('ogg-visualizer');
+            const floatingPill = document.getElementById('floating-music-pill');
+            const floatingIcon = document.getElementById('floating-music-icon');
+
+            function setPlayingState(isPlaying) {
+                if (isPlaying) {
+                    if (playIcon) playIcon.className = 'fas fa-pause';
+                    if (statusSub) statusSub.textContent = 'Sedang diputar';
+                    if (visualizer) visualizer.classList.add('active');
+                    if (floatingPill) floatingPill.classList.add('playing');
+                    if (floatingIcon) floatingIcon.className = 'fas fa-volume-high';
+                } else {
+                    if (playIcon) playIcon.className = 'fas fa-play';
+                    if (statusSub) statusSub.textContent = 'Dijeda (Klik untuk putar)';
+                    if (visualizer) visualizer.classList.remove('active');
+                    if (floatingPill) floatingPill.classList.remove('playing');
+                    if (floatingIcon) floatingIcon.className = 'fas fa-volume-xmark';
+                }
+            }
+
+            function startPlayback() {
+                if (!audio) return;
+                audio.volume = 0.65;
+                const promise = audio.play();
+                if (promise !== undefined) {
+                    promise.then(function() {
+                        setPlayingState(true);
+                    }).catch(function() {
+                        setPlayingState(false);
+                        // Autoplay policy was triggered: start on first user interaction
+                        function unlockAudio() {
+                            audio.play().then(function() {
+                                setPlayingState(true);
+                            }).catch(function() {});
+
+                            window.removeEventListener('click', unlockAudio);
+                            window.removeEventListener('touchstart', unlockAudio);
+                            window.removeEventListener('keydown', unlockAudio);
+                            window.removeEventListener('scroll', unlockAudio);
+                        }
+
+                        window.addEventListener('click', unlockAudio, { once: true });
+                        window.addEventListener('touchstart', unlockAudio, { once: true });
+                        window.addEventListener('keydown', unlockAudio, { once: true });
+                        window.addEventListener('scroll', unlockAudio, { once: true });
+                    });
+                }
+            }
+
+            // Jalankan autoplay saat membuka web
+            startPlayback();
+
+            // Kontrol Play / Pause
+            function toggleAudio(e) {
+                if (e) e.stopPropagation();
+                if (!audio) return;
+                if (audio.paused) {
+                    audio.play().then(function() {
+                        setPlayingState(true);
+                    }).catch(function() {});
+                } else {
+                    audio.pause();
+                    setPlayingState(false);
+                }
+            }
+
+            if (playBtn) {
+                playBtn.addEventListener('click', toggleAudio);
+            }
+            if (floatingPill) {
+                floatingPill.addEventListener('click', toggleAudio);
+                floatingPill.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleAudio(e);
+                    }
+                });
+            }
+
+            audio.addEventListener('play', function() {
+                setPlayingState(true);
+            });
+            audio.addEventListener('pause', function() {
+                setPlayingState(false);
+            });
+            audio.addEventListener('ended', function() {
+                audio.currentTime = 0;
+                audio.play().catch(function() {});
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "profileadamv2",
+  "version": "1.0.0",
+  "description": "Profil pribadi dan portfolio web Adam Nur Setyawan",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "echo 'No build step required'",
+    "start": "node server.js",
+    "lint": "echo 'No lint required'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
